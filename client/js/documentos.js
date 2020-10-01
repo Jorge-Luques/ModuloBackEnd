@@ -129,3 +129,46 @@ function mostrarResultados(palabra){
     result.innerHTML = html+palabra;
     document.querySelector("#total").appendChild(result);    
 }
+
+async function load() {
+    let container = document.querySelector("#tblDocs");
+    container.innerHTML = "<h2>Loading...</h2>";
+    try {
+        let response = await fetch("http://localhost:3000/mock.json");
+        if (response.ok) {
+            let t = await response.json();
+            console.log(t.misDocs); //los datos precargados estan en el arreglo de json
+            misDocs = t.misDocs;//los copio a mi arreglo global de datos
+            mostrarProductos(misDocs);
+        }
+        else
+            container.innerHTML = "<h3>Error - Failed URL!</h3>";
+    }
+    catch (response) {
+        container.innerHTML = `<h2>${response}</h2>`;
+    }; 
+}
+
+load();
+
+async function mostrarProductos(t){
+    console.log("mostrar productos")
+    let productos = document.querySelector("#tblDocs");
+    let elem = document.createElement("tbody");
+    await t;
+    // console.log(t);
+    html = "";
+    for (let r of t) {
+        html += `
+    <tr>
+        <td>${r.titulo}</td>
+        <td>${r.autor}</td>
+        <td>${r.contenido}</td>
+        <td>${r.fechaCreacion}</td>
+    </tr>
+    `;
+    }
+    // console.log(html);
+    elem.innerHTML = html;
+    productos.appendChild(elem);
+}
