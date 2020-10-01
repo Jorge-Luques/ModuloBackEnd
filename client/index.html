@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Front end</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <h1>Documentos agregados</h1>
+    <p>Ejemplo de servidor estático.</p>
+    <form>
+        <input type="text" value="" placeholder="Titulo" id="titulo">
+        <input type="text" value="" placeholder="Autor" id="autor">
+        <input type="text" value="" placeholder="Contenido" id="contenido">
+        <input type="text" value="" placeholder="Fecha de Creacion" id="fechaCreacion">
+    </form>
+    <button type="button" id="btnAgregar">Agregar</button>
+    <div>
+        <label for="seleccionDeAnalisis">Analizar documentos</label>
+        <select class="seleccionDeAnalisis">
+            <option value="autor">Autor con mas documentos</option>
+            <option value="titulo">Título más moderno</option>
+            <option value="tema">Tema más tratado</option>
+        </select>
+    </div>
+    <table>
+        <thead>
+            <th>
+            <td>Titulo</td>
+            <td>Autor</td>
+            <td>Contenido</td>
+            <td>Fecha de Creacion</td>
+            </th>
+        </thead>
+        <tbody id="tblDocs">
+        </tbody>
+    </table>
+    <div class="temaOculto">
+        <input type="text" value="" placeholder="Tema a buscar" id="temaDocs">
+        <button type="button" id="btnBuscar">Buscar</button>
+    </div>
+    <div id="total"></div>
+    <script src="js/documentos.js"></script>
+</body>
+
+</html>

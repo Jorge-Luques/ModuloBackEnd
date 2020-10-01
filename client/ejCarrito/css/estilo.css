@@ -1,0 +1,20 @@
+body{
+    background-color: cornflowerblue;
+}
+
+h1{
+    color: lightyellow;
+}
+#btnAgregar{
+    background-color: darkred;
+    color: ghostwhite;
+}
+
+#btnTotal{
+    background-color: forestgreen;
+    color: ghostwhite;
+}
+
+#btnEnvioEditar{
+    background-color: grey;
+}

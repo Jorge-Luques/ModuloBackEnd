@@ -1,0 +1,32 @@
+body{
+    background-color: olive;
+}
+
+h1{
+    color: rgb(94, 9, 9);
+}
+
+#btnAgregar{
+    background-color: seagreen;
+    color: silver;
+}
+
+#btnAnalizar{
+    background-color: mediumseagreen;
+    color: oldlace;
+}
+
+#btnBuscar{
+    background-color: rgb(46, 120, 139);
+    color: silver;
+}
+
+.temaOculto{
+    display: none;
+}
+
+input, td{
+    margin: 10px;
+    border: 20px;
+    padding: 5px;
+}
