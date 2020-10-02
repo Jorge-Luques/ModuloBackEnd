@@ -1,4 +1,3 @@
-
 let btnAgregar = document.querySelector("#btnAgregar");
 btnAgregar.addEventListener("click", agregar);
 let misDocs = [];
