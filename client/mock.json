@@ -1,0 +1,29 @@
+{
+    "status": "OK",
+    "misDocs": [
+        {
+        "titulo": "html",	
+        "autor": "Dulce",	
+        "contenido": "front",	
+        "fechaCreacion": "13-jun-2020"
+        },
+        {
+            "titulo": "ajax",	
+            "autor": "Juani",	
+            "contenido": "back",	
+            "fechaCreacion": "17-sep-2020"
+        },
+        {
+            "titulo": "nest",	
+            "autor": "Rodri",	
+            "contenido": "back",	
+            "fechaCreacion": "5-sep-2020"
+        },
+        {
+            "titulo": "api rest",	
+            "autor": "Rodri",	
+            "contenido": "back",	
+            "fechaCreacion": "21-sep-2020"
+        }
+    ]
+}
